@@ -1,0 +1,17 @@
+# LaTeX build artifacts (generated in latex/ during a build)
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+# stray PDFs left in the build root (real output goes to <Course>/Lectures/)
+/*.pdf

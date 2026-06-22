@@ -1,0 +1,31 @@
+% --- CLIP background: needed before Stable Diffusion's text conditioning ---
+\begin{frame}{Background: CLIP (Contrastive Language--Image Pre-training)}
+    \textbf{Why we need it:} Stable Diffusion does not learn ``text'' from scratch --- it
+    relies on a pre-trained \textbf{CLIP text encoder} to turn a prompt into a vector the
+    UNet can condition on. So before the pipeline, we need to know what CLIP is.
+
+    \vspace{0.6em}
+    \begin{columns}[T,onlytextwidth]
+        \column{0.56\textwidth}
+            \textbf{What CLIP does}
+            \begin{itemize}\itemsep0.25em
+                \item Trains an \textbf{image encoder} and a \textbf{text encoder} jointly on
+                      $\sim$400M (image, caption) pairs scraped from the web.
+                \item \textbf{Contrastive objective:} pull the embeddings of a matching
+                      image--caption pair together, push mismatched pairs apart.
+                \item Result: a \textbf{shared embedding space} where a picture of a cat and the
+                      text ``a photo of a cat'' land close together.
+            \end{itemize}
+        \column{0.44\textwidth}
+            \textbf{Why it matters for diffusion}
+            \begin{itemize}\itemsep0.25em
+                \item Gives a \textbf{semantic, language-aligned} representation of the prompt.
+                \item That text embedding is injected into the denoiser via
+                      \textbf{cross-attention}, steering generation toward the prompt.
+                \item Enables \textbf{zero-shot}, open-vocabulary text-to-image control.
+            \end{itemize}
+            \vspace{0.4em}
+            {\footnotesize Radford et al., ``Learning Transferable Visual Models From Natural
+            Language Supervision,'' ICML 2021 (\href{https://arxiv.org/abs/2103.00020}{arXiv:2103.00020}).}
+    \end{columns}
+\end{frame}

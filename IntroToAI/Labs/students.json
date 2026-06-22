@@ -1,0 +1,126 @@
+{
+  "course": "Data Science Fundamentals",
+  "semester": "Spring 2026",
+  "students": [
+    {
+      "id": 1,
+      "name": "Ali Hassan",
+      "age": 18,
+      "scores": {
+        "math": 88,
+        "science": 92,
+        "english": 75
+      },
+      "passed": true,
+      "notes": null
+    },
+    {
+      "id": 2,
+      "name": "Sara Al-Mutairi",
+      "age": 19,
+      "scores": {
+        "math": 72,
+        "science": 68,
+        "english": 84
+      },
+      "passed": true,
+      "notes": "strong english"
+    },
+    {
+      "id": 3,
+      "name": "Khalid Nasser",
+      "age": 18,
+      "scores": {
+        "math": 55,
+        "science": 60,
+        "english": 58
+      },
+      "passed": false,
+      "notes": "needs support"
+    },
+    {
+      "id": 4,
+      "name": "Fatima Al-Zahra",
+      "age": 20,
+      "scores": {
+        "math": 95,
+        "science": 97,
+        "english": 91
+      },
+      "passed": true,
+      "notes": null
+    },
+    {
+      "id": 5,
+      "name": "Omar Bin Saleh",
+      "age": 19,
+      "scores": {
+        "math": 43,
+        "science": 50,
+        "english": 62
+      },
+      "passed": false,
+      "notes": "at risk"
+    },
+    {
+      "id": 6,
+      "name": "Noura Al-Rashidi",
+      "age": 18,
+      "scores": {
+        "math": 78,
+        "science": 74,
+        "english": 80
+      },
+      "passed": true,
+      "notes": null
+    },
+    {
+      "id": 7,
+      "name": "Youssef Khalil",
+      "age": 21,
+      "scores": {
+        "math": 66,
+        "science": 70,
+        "english": 55
+      },
+      "passed": true,
+      "notes": null
+    },
+    {
+      "id": 8,
+      "name": "Maryam Ibrahim",
+      "age": 19,
+      "scores": {
+        "math": 90,
+        "science": 88,
+        "english": 93
+      },
+      "passed": true,
+      "notes": "top performer"
+    },
+    {
+      "id": 9,
+      "name": "Tariq Al-Jabri",
+      "age": 20,
+      "scores": {
+        "math": 38,
+        "science": 45,
+        "english": 49
+      },
+      "passed": false,
+      "notes": "at risk"
+    },
+    {
+      "id": 10,
+      "name": "Hessa Al-Mansoori",
+      "age": 18,
+      "scores": {
+        "math": 82,
+        "science": 79,
+        "english": 88
+      },
+      "passed": true,
+      "notes": null
+    }
+  ]
+}
